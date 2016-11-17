@@ -1,0 +1,121 @@
+<!--
+    För Godkänt ska du:
+
+        Färdig?
+
+        Ja          *genomföra projektet självständigt och skriva all kod själv
+
+    Kommenterat     *du ska kunna redogöra för vad du skrivit och varför
+
+        Ja          *ha minst en egen html-, css- och js-fil
+
+        Nej         *använda Bootstrap förklara lite till men även minst en egen media query
+
+        Ja          *lägga till ytterligare design i egen css utöver det som Bootstrap ger (exvis eget färgtema, andra typsnitt osv)
+
+        Ja          *använda jQuery till två olika saker men även ha minst en DOM-manipulering med enbart JS
+
+        ..Ja?       *skapa ett stylat formulär
+
+        ..Ja?       *använda HTML5-taggar där det är semantiskt korrekt att göra så
+
+                    -*-*-*-*-mer-*-*-*-*-
+
+
+
+
+    För Väl Godkänt ska du:
+
+        Nej         *göra allt för Godkänt
+
+        Mja?        *sidan ska ha en genomtänkt design som ger ett helhetsintryck där designen och funktionalitet går hand i hand
+
+        2/3?        *använda jQuery till att manipulera CSS, DOMen och någon effekt/animation
+
+        ____        *lämna in projektet i tid (har man särskilda skäl så kontaktar man Niklas per slack)
+
+        ____        *mer om formulär
+
+        Nej         *opponering (skicka som PM till mig)
+
+    -*-*-*-*-mer-*-*-*-*-
+ -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektuppgift: HTML, CSS, JavaScript, Webbstandarder</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Browser keeps page's width synced with the device-width. Scaled to 1.0 for non-zoomed entry of page. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- Bootstrap stylesheet, jQuery and JavaScript. -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- Load local styles and scripts. -->
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+    <body>
+        <!-- Separate footer from other content by putting it outside of wrap-div. -->
+        <div class="wrap">
+
+<!-- NAVBAR -->
+            <nav class="navbar navbar-default navbar-fixed-top animate-bg" id="navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Burger-icon button when page is used with small devices. -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsedNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Selfstyled "Home-button"/link. -->
+                        <a class="navbar-brand" href="index.html">
+                            <img class="bottom" src="images/maegz2.gif" style="width: 150px;"/>
+                            <img class="top" src="images/maegz3.gif" style="width: 150px;"/>
+                        </a>
+                    </div>
+                    <!-- Navigation tabs connected through id with the Burger-button's data-target. -->
+                    <div class="collapse navbar-collapse" id="collapsedNavbar">
+                        <ul class="tab">
+                            <!-- Switch visible content with JavaScript when clicking on link. -->
+                            <li><a href="#" class="tablink" onclick="switchContent(event, 'content1')">About the Project</a></li>
+                            <li><a href="#" class="tablink" onclick="switchContent(event, 'content2')">Game Time!</a></li>
+                            <li><a href="#" class="tablink" onclick="switchContent(event, 'content3')">Switch the Layout</a></li>
+                            <li><a href="#" class="tablink" onclick="switchContent(event, 'content4')">Other Projects</a></li>
+                            <li><a href="#" class="tablink" onclick="switchContent(event, 'content5')">About Me</a></li>
+                        </ul>
+                    </div>
+            </div>
+            </nav>
+
+<!-- JUMBOTRON -->
+            <div class="container-fluid" id="jumbotron">
+                <div class="jumbotron"></div>
+            </div>
+
+<!-- CONTENT -->
+            <div class="container" id="content">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 tabcontent" id="content1"></div>
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 tabcontent" id="content2"></div>
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 tabcontent" id="content3"></div>
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 tabcontent" id="content4"></div>
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 tabcontent" id="content5"></div>
+            </div>
+        </div>
+
+<!-- FOOTER -->
+        <footer>
+            <p>&copy; Copyright 2016 <a href="https://github.com/maegz">maegz</a></p>
+        </footer>
+    </body>
+</html>

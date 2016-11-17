@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+    overflow-y: scroll; /* Always show scrollbar for a none-moving
+                           background while zooming in. */
+}
+
+body {
+    height: 100%;
+    padding-top: 50px; /* Padding the navbar-height. */
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrap {
+    min-height: 100%;
+    padding-bottom: 60px; /* Padding the footer-height. */
+}
+
+#navbar {
+    background: linear-gradient(rgba(100, 149, 237, 1), rgba(100, 149, 237, 0.8));
+    }
+    .navbar-brand img {
+        position:absolute;
+        transition: opacity 0.6s ease-in-out;
+    }
+    .navbar-brand img.top:hover {
+        opacity:0;
+    }
+    .navbar-brand img.bottom {
+        border-radius: 20%;
+    }
+    /* Get rid of the bootstraps default gray color on focus */
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus {
+        background: none;
+        transition: 0.5s;
+    }
+    /* Get rid of the bootstraps default gray color on hover and add some color change */
+    .navbar-default .navbar-toggle:hover {
+        background: rgba(255,255,255,0.5);
+}
+
+ul.tab {
+    list-style-type: none;
+    }
+    /* Float the list items side by side. */
+    ul.tab li {
+        float: left;
+    }
+    /* Style the links inside the list items. */
+    ul.tab li a {
+        border-radius: 20%;
+        color: black;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 10px 0 10px 10px;
+        padding: 5px;
+        text-align: right;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    /* Change background color of links on hover */
+    ul.tab li a:hover {
+        background-color: rgba(255,255,255,0.3);
+    }
+    /* Create an active/current tablink class */
+    ul.tab li a:focus, .active {
+        background-color: rgba(255,255,255,0.8);
+    }
+    .tabcontent {
+        display: none;
+    }
+    #collapsedNavbar {
+        padding-left: 110px;
+        padding-top: 3px;
+}
+
+.jumbotron {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#content {
+    background: rgba(255,255,255,0.7);
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    position: relative;
+    height: 60px;
+    margin-top: -60px;
+    clear: both;
+    padding-top: 30px;
+}

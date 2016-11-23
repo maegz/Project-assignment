@@ -32,6 +32,9 @@ body {
     .navbar-brand img.bottom {
         border-radius: 20%;
     }
+    .navbar-brand img.simplify {
+        visibility: hidden;
+    }
     /* Get rid of the bootstraps default gray color on focus */
     .navbar-default .navbar-toggle,
     .navbar-default .navbar-toggle:focus {
@@ -100,3 +103,21 @@ footer {
     clear: both;
     padding-top: 30px;
 }
+
+#content2 ul {
+    padding: 0;
+    margin: 0;
+    }
+    #content2 li {
+        padding: 0;
+        float: left;
+        margin: 10px;
+        list-style: none;
+        outline: solid;
+        width: 150px;
+        height: 150px;
+    }
+    #content2 img {
+        width: 150px;
+        height: 150px;
+    }

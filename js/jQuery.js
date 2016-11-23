@@ -7,7 +7,7 @@ $(document).ready(function() {
     $(".jumbotron").hide(0).delay(1500).fadeIn(1000).html(
             "<div class='container'>" +
                 "<h1>Max Project</h1>" +
-                "<p>This page was created for the purpouse of testing" +
+                "<p>This page was created for the purpouse of testing " +
                 "my newly gotten skills in HTML, CSS and JavaScript. " +
                 "So bear in mind that this might not be the most brilliant " +
                 "thing you've ever seen, but instead a rookies hope and " +

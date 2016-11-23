@@ -1,0 +1,18 @@
+img {
+    width: 20px;
+}
+
+#jumbotron {
+    margin-top: 100px;
+}
+
+.navbar-brand .top, .navbar-brand .bottom {
+    display: none;
+    }
+    .navbar-brand .simplify {
+        visibility: visible;
+}
+
+#collapsedNavbar {
+    float: right;
+}

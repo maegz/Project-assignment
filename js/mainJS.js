@@ -49,9 +49,10 @@ function createTabContent(content) {
             content3.innerHTML =
                 "<h2>Switch the Layout</h2>" +
                 "<select id='selectSheet' onChange='swapStyleSheet()'>" +
+                    "<option disabled='disabled' selected='selected'>Choose here:</option>" +
                     "<option value='css/master.css'>Default</option>" +
                     "<option value='css/simplify.css'>Simplify</option>" +
-                    "<option value='css/master.css'>None (may be difficult to orientate)</option>" +
+                    "<option value=''>None (may be difficult to orientate)</option>" +
                 "</select>";
             break;
         case "content4":
@@ -65,11 +66,12 @@ function createTabContent(content) {
                 "<p>!!!!!!ME HERE!!!!!</p>";
             break;
 
-        default: contentPage.innerHTML = "";
+        default: content.innerHTML = "";
     }
 };
 
 function swapStyleSheet() {
-    var select = document.getElementById("selectSheet").value;
-    document.getElementById("pagestyle").setAttribute("href", select);
+    var select = document.getElementById("selectSheet");
+    // Get the stylesheet in index.html and switch the href to the selected value in the select-element.
+    document.getElementById("pagestyle").setAttribute("href", select.value);
 };

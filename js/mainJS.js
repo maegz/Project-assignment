@@ -104,7 +104,7 @@ function createTabContent(content) {
             content5.innerHTML =
                 "<h2>About Me:</h2>" +
                 "<p>Welcome to the project site! I (the creator) am Max(imilan) Sundberg.</p>" +
-                "<p>I live in Uppsala, Sweden, and has been since I was born. Except when I went" +
+                "<p>I live in Uppsala, Sweden, and have been since I was born. Except when I went " +
                 "to Oslo, Norway to get some work experience and a little bit of easy cash.</p>" +
                 "<p>I'm a certified cook and have always been interested in cooking. It probalby comes " +
                 "from my father, since he's been in the kitchen, doing 12 hour meals as long as I can remember. " +
@@ -116,7 +116,7 @@ function createTabContent(content) {
                 "makes me smile!</p>" +
                 "<p>But when I don't work, cook or play the drums I prefer to travel. " +
                 "And when I say travel I mean it. Into the culture and explore, no darn coconut-drinks at the beach!</p><br>" +
-                "<p>Well.. that's a little something-something about me. Cheers!</p>";
+                "<p>Well.. that's a little something-something about me. Cheers!</p><br>";
             break;
 
         default: content.innerHTML = "";

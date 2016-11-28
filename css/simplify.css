@@ -1,18 +1,12 @@
-img {
-    width: 20px;
-}
+body, .wrap { min-height: 100% }
 
-#jumbotron {
-    margin-top: 100px;
-}
+img { width: 20px; }
 
-.navbar-brand .top, .navbar-brand .bottom {
-    display: none;
-    }
-    .navbar-brand .simplify {
-        visibility: visible;
-}
+.wrap { padding-bottom: 60px; }
 
-#collapsedNavbar {
-    float: right;
-}
+#jumbotron { margin-top: 100px; }
+
+.navbar-brand .top, .navbar-brand .bottom { display: none; }
+    .navbar-brand .simplify { visibility: visible; }
+
+#collapsedNavbar { float: right; }

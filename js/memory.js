@@ -15,6 +15,7 @@ for (var i = 1; i < 7; i++) {
     imagesArray.push(img);
 }
 
+// Use the modern version of the Fisher–Yates shuffle. A.k.a. the Durstenfeld shuffle.
 function shuffle(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -24,13 +25,16 @@ function shuffle(array) {
     }
 }
 
+// Setting up a new game of memory.
 function memoryGame() {
+
+    // Create a clear output, and shuffle the array.
     clearedImages = 0;
     triesThisGame = 0;
     output = "";
     shuffle(imagesArray);
 
-    // Output headline. Output images inside an ordered list, then hide them.
+    // Output headline. Output images inside an ordered list.
     var output = "<h2>Let's play some memory!</h2><br><ol>";
 
     for (var i = 0; i < imagesArray.length; i++) {
@@ -44,7 +48,7 @@ function memoryGame() {
     "<p>Won games: " + wonGames + "</p>" +
     "<p>Average tries per game: " + averagePerGame + "</p></div>";
 
-    // Put the output in content2.
+    // Put the output in content2, and fade everything in.
     document.getElementById("content2").innerHTML = output;
     $("#content2").fadeIn("slow");
 }
@@ -61,7 +65,6 @@ function showImage(li, value) {
         image.src = value;
         $(image).fadeIn("fast");
         li.appendChild(image);
-        image.className += "visible";
 
         if (imageValues.length == 0) {
             triesThisGame += 1;
@@ -79,12 +82,17 @@ function showImage(li, value) {
 
                 if (clearedImages == imagesArray.length) {
                     function restartGame() {
+                        wonGames += 1;
+                        tempAverage = triesTotal / wonGames;
+                        if (tempAverage < 10) {
+                            averagePerGame = tempAverage.toPrecision(3);
+                        } else {
+                            averagePerGame = tempAverage.toPrecision(4);
+                        }
+                        $("#content2").fadeIn("slow");
+                        $("#content2").html("<h1 style='text-align: center;'>You did it!</h1>");
                         $("#content2").fadeOut(1500, function() { memoryGame(); });
                     }
-                    wonGames += 1;
-                    averagePerGame = triesTotal / wonGames;
-                    $("#content2").fadeIn("slow");
-                    $("#content2").html("<h1 style='text-align: center;'>You did it!</h1>");
                     restartGame();
                 }
 

@@ -40,32 +40,33 @@ function createTabContent(content) {
                 "</p><br>" +
                 "<h2>Gradings:<h2>" +
                 "<h3>Accepted (G):</h3>" +
-                "<p>- Make project and code all by myself.</p>" +
-                "<p>- Be able to tell about the code and why I did it like so.</p>" +
-                "<p>- Have at least one HTML-, CSS- and JS-file.</p>" +
-                "<p>- Use Bootstrap for some part of the design.</p>" +
-                "<p>- Have at least one Media Query.</p>" +
-                "<p>- Add design with my own CSS extended over the Bootstrap-CSS.</p>" +
-                "<p>- Use jQuery for two different parts. But also at least one DOM-manipultaion with only JS.</p>" +
-                "<p>- Make a styled form.</p>" +
-                "<p>- Use HTML5-tags where it's semanticly correct to do so.</p>" +
-                "<p>- Have a proper, neat readme-file on GitHub, explaining that it's a " +
-                "schoolproject, what course it is, wich school, technology usage, " +
-                "maker of the project and a link to my LinkedIn.</p>" +
-                "<p>- Have a page that looks good on at least two screen-sizes: mobile and computer.</p>" +
-                "<p>- Have a working menu that fits for the screen-size.</p>" +
+                    "<p>- Make project and code all by myself.</p>" +
+                    "<p>- Be able to tell about the code and why I did it like so.</p>" +
+                    "<p>- Have at least one HTML-, CSS- and JS-file.</p>" +
+                    "<p>- Use Bootstrap for some part of the design.</p>" +
+                    "<p>- Have at least one Media Query.</p>" +
+                    "<p>- Add design with my own CSS extended over the Bootstrap-CSS.</p>" +
+                    "<p>- Use jQuery for two different parts. But also at least one DOM-manipultaion with only JS.</p>" +
+                    "<p>- Make a styled form.</p>" +
+                    "<p>- Use HTML5-tags where it's semanticly correct to do so.</p>" +
+                    "<p>- Have a proper, neat readme-file on GitHub, explaining that it's a " +
+                    "schoolproject, what course it is, wich school, technology usage, " +
+                    "maker of the project and a link to my LinkedIn.</p>" +
+                    "<p>- Have a page that looks good on at least two screen-sizes: mobile and computer.</p>" +
+                    "<p>- Have a working menu that fits for the screen-size.</p>" +
                 "<h3>Very accepted (VG):</h3>" +
-                "<p>- Make everything in Accepted (G).</p>" +
-                "<p>- Make the page well thought through with the design. "+
-                "Giving a whole where design and functionality works together.</p>" +
-                "<p>- Manipulate CSS, the DOM and make some effect/animation using jQuery.</p>" +
-                "<p>- Have some form of JS-functionality. jQuery is allowed.</p>" +
-                "<p>- Complete project before deadline.</p>" +
-                "<p>- Have a tidy readme on GitHub, giving a short explanation about the workprocess " +
-                "and tell about what I think I did well, and what I could work on to make better.</p>" +
-                "<p>- Have a page that looks good on at least three screen-sizes.</p>" +
-                "<p>- Make a opposition on another students project and tell about three things that are well done " +
-                "and three things that could be made better.</p><br><br>";
+                    "<p>- Make everything in Accepted (G).</p>" +
+                    "<p>- Make the page well thought through with the design. "+
+                    "Giving a whole where design and functionality works together.</p>" +
+                    "<p>- Manipulate CSS, the DOM and make some effect/animation using jQuery.</p>" +
+                    "<p>- Have some form of JS-functionality. jQuery is allowed.</p>" +
+                    "<p>- Complete project before deadline.</p>" +
+                    "<p>- Have a tidy readme on GitHub, giving a short explanation about the workprocess " +
+                    "and tell about what I think I did well, and what I could work on to make better.</p>" +
+                    "<p>- Have a page that looks good on at least three screen-sizes.</p>" +
+                    "<p>- Make a opposition on another students project and tell about three things that are well done " +
+                    "and three things that could be made better.</p>" +
+                "<br><br>";
             break;
         case "content2":
             // Memory game. More info in the memory.js-file.
@@ -115,7 +116,7 @@ function createTabContent(content) {
                 "<p>Although my biggest passion is music! I've been playing drums since I was 11, and it always " +
                 "makes me smile!</p>" +
                 "<p>But when I don't work, cook or play the drums I prefer to travel. " +
-                "And when I say travel I mean it. Into the culture and explore, no darn coconut-drinks at the beach!</p><br>" +
+                "And when I say travel I mean it. Into the culture and explore, no darn coconut-drinks by the beach!</p><br>" +
                 "<p>Well.. that's a little something-something about me. Cheers!</p><br>";
             break;
 

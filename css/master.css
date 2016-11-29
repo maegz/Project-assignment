@@ -118,6 +118,17 @@ body {
         text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #content2 li, #content2 img {
+        width: 75px;
+        height: 75px;
+    }
+    #content li {
+        margin: 2px;
+    }
+}
+
 
 footer {
     position: relative;

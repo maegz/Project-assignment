@@ -92,7 +92,7 @@ function createTabContent(content) {
                 "<ul>" +
                     "<li><a href='https://github.com/maegz/Python-project'>Text-based escape game in Python.</a></li>" +
                     "<li><a href='https://github.com/maegz/DPYett'>First 'digital presentation' in this course.</a></li>" +
-                    "<li><a href='https://github.com/maegz'>Just my GitHub-page..</a></li>" +
+                    "<li><a href='https://github.com/maegz'>My GitHub-page</a></li>" +
                 "</ul>";
                 content4.style.textAlign = "center"; // Get everything in content4 centerd.
                 var links = content4.children;

@@ -21,7 +21,7 @@ body {
 }
 
 
-/*NAVBAR CONTENT*/
+/* NAVBAR */
 #navbar {
     background: linear-gradient(rgba(100, 149, 237, 1), rgba(100, 149, 237, 0.8));
     }
@@ -93,7 +93,7 @@ body {
 }
 
 
-/*CONTENT.. CONTENT*/
+/* CONTENT */
 #content {
     background: rgba(255,255,255,0.7);
     }
@@ -118,8 +118,21 @@ body {
         text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+footer {
+    position: relative;
+    height: 60px;
+    margin-top: -60px;
+    clear: both;
+    padding-top: 30px;
+}
+
+/* MOBILE MEDIA */
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: none;
+        background-color: blue;
+    }
+
     #content2 li, #content2 img {
         width: 75px;
         height: 75px;
@@ -127,13 +140,4 @@ body {
     #content li {
         margin: 2px;
     }
-}
-
-
-footer {
-    position: relative;
-    height: 60px;
-    margin-top: -60px;
-    clear: both;
-    padding-top: 30px;
 }

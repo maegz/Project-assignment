@@ -23,6 +23,8 @@ After the long process of making the game work, I could focus on adding fade-in/
 
 <p>Game done and making a comfortable transition over the different pages was the next step. By using a switch-case-function through clicking on the nav-links, I made it possible to fade the different contents in and out, for a smooth visual feeling, and still keep everything on one page.</p>
 
+<p>I also made a "style-swapper"-page. The purpouse is for seeing different layouts. Choosing regular, simplified and a raw version. All styles still have the Bootstrap-CSS, but it still makes quite the difference.</p>
+
 <p>In the end I have added some plain HTML-pages and tried to make everything more adaptable to mobile devices. Skipping the background-image and making the hovering effect on both jumbotron and footer disappear makes it more suitable for the loading time when on phones and such.</p>
 
 <h3>Summary</h3>

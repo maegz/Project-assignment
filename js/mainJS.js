@@ -54,7 +54,7 @@ function createTabContent(content) {
                     "maker of the project and a link to my LinkedIn.</p>" +
                     "<p>- Have a page that looks good on at least two screen-sizes: mobile and computer.</p>" +
                     "<p>- Have a working menu that fits for the screen-size.</p>" +
-                "<h3>Very accepted (VG):</h3>" +
+                "<h3>More than accepted (VG):</h3>" +
                     "<p>- Make everything in Accepted (G).</p>" +
                     "<p>- Make the page well thought through with the design. "+
                     "Giving a whole where design and functionality works together.</p>" +

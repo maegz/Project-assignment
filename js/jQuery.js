@@ -1,6 +1,7 @@
 // Small jQuery-function to make the footer and jumbotron loop opacity changes slightly.
 $(document).ready(function() {
 
+    // Make the fading and opacity-changings so that they only occur when on bigger screens.
     if ($(window).width() > 480) {
 
         $("nav").hide(0).delay(2000).fadeIn(1000);

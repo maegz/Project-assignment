@@ -81,7 +81,7 @@ body {
             display: none;
         }
         #collapsedNavbar {
-            padding-left: 110px;
+            /*padding-left: 110px;*/
             padding-top: 3px;
 }
 
@@ -131,6 +131,10 @@ footer {
     body {
         background-image: none;
         background-color: blue;
+    }
+
+    ul.tab li {
+        float: none;
     }
 
     #content2 li, #content2 img {

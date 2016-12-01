@@ -81,7 +81,7 @@ body {
             display: none;
         }
         #collapsedNavbar {
-            /*padding-left: 110px;*/
+            padding-left: 110px;
             padding-top: 3px;
 }
 
@@ -143,5 +143,11 @@ footer {
     }
     #content li {
         margin: 2px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #collapsedNavbar {
+        padding-left: 0px;
     }
 }

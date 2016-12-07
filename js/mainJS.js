@@ -78,12 +78,14 @@ function createTabContent(content) {
             content3.innerHTML =
                 "<h2>Switch the Layout:</h2>" +
                 "<p>Use the dropdown menu to change stylesheet.</p>" +
-                "<select id='selectSheet' onChange='swapStyleSheet()'>" +
-                    "<option disabled='disabled' selected='selected'>Choose here:</option>" +
-                    "<option value='css/master.css'>Default</option>" +
-                    "<option value='css/simplify.css'>Simplify</option>" +
-                    "<option value=''>None (may be difficult to orientate)</option>" +
-                "</select>";
+                "<form>" +
+                    "<select id='selectSheet' onChange='swapStyleSheet()'>" +
+                        "<option disabled='disabled' selected='selected'>Choose here:</option>" +
+                        "<option value='css/master.css'>Default</option>" +
+                        "<option value='css/simplify.css'>Simplify</option>" +
+                        "<option value=''>None (may be difficult to orientate)</option>" +
+                    "</select>" +
+                "</form>";
             break;
         case "content4":
             // Let user see more projects on GitHub.

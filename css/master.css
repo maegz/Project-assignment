@@ -118,6 +118,19 @@ body {
         text-align: center;
 }
 
+form {
+    padding-bottom: 10px;
+    color: blue;
+    }
+    form select {
+        border-radius: 6px;
+        text-align: center;
+    }
+    form select, form option {
+        background: lightblue;
+}
+
+
 footer {
     position: relative;
     height: 60px;
